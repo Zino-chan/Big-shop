@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Public+Sans:wght@500;600;700&display=swap");
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Public Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+
+.home {
+  background-image: url("/src/images/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-position: initial;
+  position: relative;
+}
+
+.home .home-text {
+  position: absolute;
+  top: 50%;
+  right: 20%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.home .home-text h1 {
+  font-size: 7rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.home .home-text p {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 5rem;
+}
+
+.home .home-text p span {
+  color: yellow;
+}
+
+.home .home-text .btn {
+  font-size: 2rem;
+  border-radius: 40px;
+  padding: .6rem 2rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+/*# sourceMappingURL=main.css.map */

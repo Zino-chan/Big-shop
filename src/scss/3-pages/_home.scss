@@ -1,0 +1,33 @@
+.home{
+    background-image: url('/src/images/banner.png');
+    @include bgImg();
+    background-position: initial;
+    position: relative;
+
+    .home-text{
+        position: absolute;
+        top: 50%;
+        right: 20%;
+        transform: translateY(-50%);
+
+        h1{
+            font-size: 7rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        p{
+            font-size: 2rem;
+            color:$white;
+            margin-bottom: 5rem;
+            span{color: yellow;}
+        }
+
+        .btn{
+            font-size: 2rem;
+            border-radius: 40px;
+            padding: .6rem 2rem;
+            display: inline-flex;
+        }
+    }
+}
