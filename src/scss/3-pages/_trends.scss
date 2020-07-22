@@ -10,70 +10,75 @@
         
         margin-bottom: 7rem;
     }
+}
 
-    .trend-item{
-        margin-bottom: 5rem;
-        padding: 1rem 1rem 0 1rem;
-        background-color: $white;
-        overflow: hidden;
-        cursor: pointer;
-        
-        &:hover{
-            @include transition();
-            transform: scale(1.1);
-            box-shadow: -1px 2px 57px -27px rgba(85,85,85,1);
-            overflow: visible;
-        
-            .cta{transform: translateY(50%); @include transition();}
+// Trends Items
+.trend-item{
+    margin-bottom: 5rem;
+    padding: 1rem 1rem 0 1rem;
+    background-color: $white;
+    overflow: hidden;
+    cursor: pointer;
+    @include transition();
+    
+    &:hover{
+        @include transition();
+        transform: scale(1.1);
+        box-shadow: -1px 2px 57px -27px rgba(85,85,85,1);
+        overflow: visible;
+    
+        .cta{transform: translateY(50%); @include transition();}
 
-            .reactions{
-                .heart,
-                .comment{transform: scale(1); @include transition();}
-            }
-        }
-
-
-
-        .cta{
-            transform: translateY(100%);
-            .btn{
-                background: $primary-bg;
-                color: $white;
-                font-size: 1.5rem;
-                padding: .6rem 2rem;
-                border-radius: 40px;
-                text-transform: capitalize; 
-            }
+        .reactions{
+            .heart,
+            .comment{transform: scale(1); @include transition();}
         }
     }
 
-    .item-img{
-        height: 250px;
-        width: 100%;
-        @include bgImg(contain);
-        margin-bottom: 2rem;
-    }
 
-    .item-info{
-        h5{
-            color: $gray;
-        }
-        .price{
+
+    .cta{
+        transform: translateY(100%);
+        @include transition(all, 200ms, linear);
+        .btn{
+            background: $primary-bg;
+            color: $white;
             font-size: 1.5rem;
-            font-weight: 700;
+            padding: .6rem 2rem;
+            border-radius: 40px;
+            text-transform: capitalize; 
         }
     }
+}
 
-    .reactions{
-        color: $light-gray;
-        font-size: 1.3rem;
-        .heart {
-            transform: scale(0);
-            i{color: crimson;}
-        }
-        .comment{
-            transform: scale(0);
-            i{color: aqua;}
-        }
+.item-img{
+    height: 250px;
+    width: 100%;
+    @include bgImg(contain);
+    margin-bottom: 2rem;
+}
+
+.item-info{
+    h5{
+        color: $gray;
+    }
+    .price{
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+}
+
+.reactions{
+    color: $light-gray;
+    font-size: 1.3rem;
+    .heart {
+        transform: scale(0);
+        @include transition(all, 200ms, linear);
+        i{color: crimson;}
+    }
+    .comment{
+        transform: scale(0);
+        @include transition(all, 200ms, linear);
+        i{color: aqua;}
     }
 }

@@ -27,6 +27,15 @@ p {
   line-height: 1.6;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
 .about {
   padding: 10rem 0;
   height: 100vh;
@@ -96,6 +105,48 @@ p {
   display: inline-flex;
 }
 
+.showcase {
+  width: 70vw;
+  background-color: #fff;
+  margin: 0 auto;
+  position: relative;
+  padding: 4rem  0;
+  -webkit-box-shadow: -1px 11px 28px -13px #555555;
+          box-shadow: -1px 11px 28px -13px #555555;
+}
+
+.showcase h2 {
+  margin-bottom: 5rem;
+}
+
+.showcase .showcase-nav {
+  padding: .9rem 2rem;
+  width: 63%;
+  margin: 3rem auto 7rem auto;
+  background-color: #fff;
+  border-radius: 40px;
+  -webkit-box-shadow: -1px 11px 28px -13px #555555;
+          box-shadow: -1px 11px 28px -13px #555555;
+}
+
+.showcase .showcase-nav ul {
+  height: 100%;
+}
+
+.showcase .showcase-nav ul .nav-item {
+  font-size: 1.8rem;
+  font-weight: 700;
+  background: -webkit-gradient(linear, left top, right top, from(#8c85f9), color-stop(52%, #996ff5), to(#a065f5));
+  background: linear-gradient(90deg, #8c85f9 0%, #996ff5 52%, #a065f5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.showcase .showcase-nav ul .nav-item.active {
+  font-size: 1.9rem;
+  text-shadow: 2px 6px 15px #8c85f9;
+}
+
 .trends {
   width: 70vw;
   background-color: #fff;
@@ -110,15 +161,17 @@ p {
   margin-bottom: 7rem;
 }
 
-.trends .trend-item {
+.trend-item {
   margin-bottom: 5rem;
   padding: 1rem 1rem 0 1rem;
   background-color: #fff;
   overflow: hidden;
   cursor: pointer;
+  -webkit-transition: all 350ms linear;
+  transition: all 350ms linear;
 }
 
-.trends .trend-item:hover {
+.trend-item:hover {
   -webkit-transition: all 350ms linear;
   transition: all 350ms linear;
   -webkit-transform: scale(1.1);
@@ -128,27 +181,29 @@ p {
   overflow: visible;
 }
 
-.trends .trend-item:hover .cta {
+.trend-item:hover .cta {
   -webkit-transform: translateY(50%);
           transform: translateY(50%);
   -webkit-transition: all 350ms linear;
   transition: all 350ms linear;
 }
 
-.trends .trend-item:hover .reactions .heart,
-.trends .trend-item:hover .reactions .comment {
+.trend-item:hover .reactions .heart,
+.trend-item:hover .reactions .comment {
   -webkit-transform: scale(1);
           transform: scale(1);
   -webkit-transition: all 350ms linear;
   transition: all 350ms linear;
 }
 
-.trends .trend-item .cta {
+.trend-item .cta {
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
 }
 
-.trends .trend-item .cta .btn {
+.trend-item .cta .btn {
   background: -webkit-gradient(linear, left top, right top, from(#8c85f9), color-stop(52%, #996ff5), to(#a065f5));
   background: linear-gradient(90deg, #8c85f9 0%, #996ff5 52%, #a065f5 100%);
   color: #fff;
@@ -158,7 +213,7 @@ p {
   text-transform: capitalize;
 }
 
-.trends .item-img {
+.item-img {
   height: 250px;
   width: 100%;
   background-repeat: no-repeat;
@@ -167,35 +222,39 @@ p {
   margin-bottom: 2rem;
 }
 
-.trends .item-info h5 {
+.item-info h5 {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.trends .item-info .price {
+.item-info .price {
   font-size: 1.5rem;
   font-weight: 700;
 }
 
-.trends .reactions {
+.reactions {
   color: #ccc;
   font-size: 1.3rem;
 }
 
-.trends .reactions .heart {
+.reactions .heart {
   -webkit-transform: scale(0);
           transform: scale(0);
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
 }
 
-.trends .reactions .heart i {
+.reactions .heart i {
   color: crimson;
 }
 
-.trends .reactions .comment {
+.reactions .comment {
   -webkit-transform: scale(0);
           transform: scale(0);
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
 }
 
-.trends .reactions .comment i {
+.reactions .comment i {
   color: aqua;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,38 @@
+.showcase{
+    width: 70vw;
+    background-color: $white;
+    margin: 0 auto;
+    //margin: 0 auto -4rem auto;
+    position: relative;
+    padding: 4rem  0;
+    box-shadow: -1px 11px 28px -13px rgba(85,85,85,1);
+
+    h2{margin-bottom: 5rem;}
+
+    .showcase-nav{
+        padding: .9rem 2rem;
+        width: 63%;
+        margin: 3rem auto 7rem auto;
+        background-color: $white;
+        border-radius: 40px;
+        box-shadow: -1px 11px 28px -13px rgba(85,85,85,1);
+        
+        ul{
+            height: 100%;
+
+            .nav-item{
+                font-size: 1.8rem;
+                font-weight: 700;
+                background: $primary-bg;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+
+                &.active{
+                    font-size: 1.9rem;
+                    text-shadow: 2px 6px 15px rgba(140,133,249,1);
+                }
+                
+            }
+        }
+    }
+}
