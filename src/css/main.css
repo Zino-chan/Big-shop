@@ -58,4 +58,108 @@ h6 {
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
+
+.trends {
+  width: 80vw;
+  background-color: #fff;
+  margin: -4rem auto 0 auto;
+  position: relative;
+  padding: 5rem  0;
+  -webkit-box-shadow: -1px 11px 28px -13px #555555;
+          box-shadow: -1px 11px 28px -13px #555555;
+}
+
+.trends h2 {
+  font-size: 4rem;
+  margin-bottom: 7rem;
+}
+
+.trends .trend-item {
+  margin-bottom: 5rem;
+  padding: 1rem 1rem 0 1rem;
+  background-color: #fff;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.trends .trend-item:hover {
+  -webkit-transition: all 350ms linear;
+  transition: all 350ms linear;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: -1px 2px 57px -27px #555555;
+          box-shadow: -1px 2px 57px -27px #555555;
+  overflow: visible;
+}
+
+.trends .trend-item:hover .cta {
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  -webkit-transition: all 350ms linear;
+  transition: all 350ms linear;
+}
+
+.trends .trend-item:hover .reactions .heart,
+.trends .trend-item:hover .reactions .comment {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 350ms linear;
+  transition: all 350ms linear;
+}
+
+.trends .trend-item .cta {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+}
+
+.trends .trend-item .cta .btn {
+  background: -webkit-gradient(linear, left top, right top, from(#8c85f9), color-stop(52%, #996ff5), to(#a065f5));
+  background: linear-gradient(90deg, #8c85f9 0%, #996ff5 52%, #a065f5 100%);
+  color: #fff;
+  font-size: 1.5rem;
+  padding: .6rem 2rem;
+  border-radius: 40px;
+  text-transform: capitalize;
+}
+
+.trends .item-img {
+  height: 250px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  margin-bottom: 2rem;
+}
+
+.trends .item-info h5 {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.trends .item-info .price {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.trends .reactions {
+  color: #ccc;
+  font-size: 1.3rem;
+}
+
+.trends .reactions .heart {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.trends .reactions .heart i {
+  color: crimson;
+}
+
+.trends .reactions .comment {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.trends .reactions .comment i {
+  color: aqua;
+}
 /*# sourceMappingURL=main.css.map */
