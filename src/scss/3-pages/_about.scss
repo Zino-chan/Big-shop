@@ -1,0 +1,25 @@
+.about{
+    padding: 10rem 0;
+    height: 100vh;
+    .container-fluid{width: 70vw;}
+
+    .about-img{
+        height: 700px;
+        width: 100%;
+        @include bgImg();
+    }
+
+    .about-text{
+       
+
+        h3{
+            font-size: 2.5rem;
+            font-weight: 400;
+        }
+
+        p{
+            font-size: 1.6rem;
+            color: $gray;
+        }
+    }
+}

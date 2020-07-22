@@ -17,6 +17,43 @@ h6 {
   font-family: "Poppins", sans-serif;
 }
 
+h2 {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.about {
+  padding: 10rem 0;
+  height: 100vh;
+}
+
+.about .container-fluid {
+  width: 70vw;
+}
+
+.about .about-img {
+  height: 700px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.about .about-text h3 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.about .about-text p {
+  font-size: 1.6rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+
 .home {
   background-image: url("/src/images/banner.png");
   background-repeat: no-repeat;
@@ -60,17 +97,16 @@ h6 {
 }
 
 .trends {
-  width: 80vw;
+  width: 70vw;
   background-color: #fff;
   margin: -4rem auto 0 auto;
   position: relative;
-  padding: 5rem  0;
+  padding: 4rem  0;
   -webkit-box-shadow: -1px 11px 28px -13px #555555;
           box-shadow: -1px 11px 28px -13px #555555;
 }
 
 .trends h2 {
-  font-size: 4rem;
   margin-bottom: 7rem;
 }
 
