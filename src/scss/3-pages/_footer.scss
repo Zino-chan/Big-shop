@@ -1,0 +1,44 @@
+.footer{
+    padding: 6rem 0;
+    
+    .logo{
+        margin-bottom: 2rem;
+        font-size: 4rem;
+        font-weight: 600;
+    }
+
+    .navbar-list{
+        width: 70%;
+        margin: 2rem auto;
+        .nav-link{
+            font-size: 1.9rem;
+            color: $black;
+        }
+    }
+
+    .social-nav{
+        width: 35%;
+        i{
+            width: 70px;
+            height: 70px;
+            line-height: 70px;
+            text-align: center;
+            border: 1px solid $light-gray;
+            color: $black;
+            font-size: 1.9rem;
+            border-radius: 50%;
+            @include transition(all, .2s, linear);
+            cursor: pointer;
+           
+            &:hover{
+                @include transition(all, .2s, linear);
+                background: $primary-bg;
+                color: $white;
+                transform: scale(1.1);
+                box-shadow: -5px 4px 16px -1px rgba(0,0,0,0.59);
+                border-color: transparent;
+
+            }
+        }
+    }
+}

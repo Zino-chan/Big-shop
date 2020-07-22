@@ -63,6 +63,57 @@ li {
   color: rgba(0, 0, 0, 0.6);
 }
 
+.footer {
+  padding: 6rem 0;
+}
+
+.footer .logo {
+  margin-bottom: 2rem;
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.footer .navbar-list {
+  width: 70%;
+  margin: 2rem auto;
+}
+
+.footer .navbar-list .nav-link {
+  font-size: 1.9rem;
+  color: #000;
+}
+
+.footer .social-nav {
+  width: 35%;
+}
+
+.footer .social-nav i {
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  border: 1px solid #ccc;
+  color: #000;
+  font-size: 1.9rem;
+  border-radius: 50%;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+
+.footer .social-nav i:hover {
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  background: -webkit-gradient(linear, left top, right top, from(#8c85f9), color-stop(52%, #996ff5), to(#a065f5));
+  background: linear-gradient(90deg, #8c85f9 0%, #996ff5 52%, #a065f5 100%);
+  color: #fff;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: -5px 4px 16px -1px rgba(0, 0, 0, 0.59);
+          box-shadow: -5px 4px 16px -1px rgba(0, 0, 0, 0.59);
+  border-color: transparent;
+}
+
 .home {
   background-image: url("/src/images/banner.png");
   background-repeat: no-repeat;
@@ -161,8 +212,8 @@ li {
   margin: 0 auto -4rem auto;
   position: relative;
   padding: 4rem  0;
-  -webkit-box-shadow: -1px 11px 28px -13px #555555;
-          box-shadow: -1px 11px 28px -13px #555555;
+  -webkit-box-shadow: -6px 2px 37px 0px rgba(0, 0, 0, 0.59);
+          box-shadow: -6px 2px 37px 0px rgba(0, 0, 0, 0.59);
 }
 
 .showcase h2 {
