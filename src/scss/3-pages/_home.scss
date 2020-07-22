@@ -1,17 +1,19 @@
 .home{
-    background-image: url('/src/images/banner.png');
+    background-image: url('/src/images/fashion.jpeg');
     @include bgImg();
-    background-position: initial;
     position: relative;
 
+    .home-content{
+        width: 70vw;
+        position: relative;
+        z-index: 9;
+        margin: 0 auto;
+    }
+
     .home-text{
-        position: absolute;
-        top: 50%;
-        right: 20%;
-        transform: translateY(-50%);
 
         h1{
-            font-size: 7rem;
+            font-size: 9rem;
             font-weight: 600;
             margin-bottom: 1rem;
         }
@@ -30,4 +32,25 @@
             display: inline-flex;
         }
     }
+}
+
+
+@include responsive_mobile(){
+    html{font-size: 14px;}
+
+    .home-content{
+        width: 100vw!important;
+    }
+
+    .home-text{text-align: center;}
+}
+
+@include responsive_max(411px){
+    html{font-size: 12px;}
+
+    .home-text h1{font-size: 6rem!important;}
+}
+
+@include responsive_max(360px){
+    html{font-size: 10px!important;}
 }

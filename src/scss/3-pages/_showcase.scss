@@ -36,3 +36,41 @@
         }
     }
 }
+
+
+
+@include responsive_tab(){
+    .showcase{
+        width: 95vw!important;
+        .showcase-nav{
+            width: 90%!important;
+        }
+    }
+}
+
+@include responsive_max(411px){
+    .showcase{
+        width: 98vw!important;
+        padding: 2rem!important;
+        box-shadow: -1px 11px 28px -13px rgba(85,85,85,1)!important;
+
+        h2{text-align: center;}
+
+    .showcase-nav{
+        width: 100%!important;
+        ul{
+            flex-wrap: wrap;
+            li{width: 33.33%;}
+            }
+        }
+    }
+}
+
+@include responsive_max(360px){
+    .showcase-nav{
+        ul{
+            text-align: center;
+            li{width: 50%!important;}
+        }
+    }
+}

@@ -3,6 +3,7 @@
     background-color: $white;
     margin: -4rem auto 0 auto;
     position: relative;
+    z-index: 9;
     padding: 4rem  0;
     box-shadow: -1px 11px 28px -13px rgba(85,85,85,1);
 
@@ -46,7 +47,12 @@
             font-size: 1.5rem;
             padding: .6rem 2rem;
             border-radius: 40px;
-            text-transform: capitalize; 
+            text-transform: capitalize;
+            @include transition();
+            &:hover{
+                background: $hover-bg;
+                @include transition();
+            }
         }
     }
 }
@@ -80,5 +86,22 @@
         transform: scale(0);
         @include transition(all, 200ms, linear);
         i{color: aqua;}
+    }
+}
+
+@include responsive_tab(){
+    .trends{
+        width: 95vw!important;
+    }
+}
+
+@include responsive_max(411px){
+    .trends{
+        width: 98vw!important;
+        padding: 2rem!important;
+
+        h2{margin-bottom: 4rem; text-align: center;}
+        
+        .item-img{height: 210px!important;}
     }
 }

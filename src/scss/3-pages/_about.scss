@@ -1,6 +1,6 @@
 .about{
     padding: 10rem 0;
-    height: 100vh;
+    min-height: 100vh;
     .container-fluid{width: 70vw;}
 
     .about-img{
@@ -21,5 +21,19 @@
             font-size: 1.6rem;
             color: $gray;
         }
+    }
+}
+
+@include responsive_max(411px){
+    .container-fluid{
+        width: 100vw!important;
+    }
+
+    .about-text{
+        margin-bottom: 3rem;
+    }
+
+    .about-img{
+        height: 350px!important;
     }
 }
