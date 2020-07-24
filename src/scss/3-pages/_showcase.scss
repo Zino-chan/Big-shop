@@ -9,6 +9,15 @@
 
     h2{margin-bottom: 5rem;}
 
+    .showcase-items{
+        div:nth-child(1) .item-img {background-image: url('../images/trend1.png');}
+        div:nth-child(2) .item-img{background-image: url('../images/trend2.png');}
+        div:nth-child(3) .item-img{background-image: url('../images/trend3.png');}
+        div:nth-child(4) .item-img{background-image: url('../images/trend4.png');}
+        div:nth-child(5) .item-img{background-image: url('../images/trend5.png');}
+        div:nth-child(6) .item-img{background-image: url('../images/trend6.png');}
+    }
+
     .showcase-nav{
         padding: .9rem 2rem;
         width: 63%;

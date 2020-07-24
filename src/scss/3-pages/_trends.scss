@@ -11,6 +11,17 @@
         
         margin-bottom: 7rem;
     }
+
+    
+    .trend-items{
+        div:nth-child(1) .item-img {background-image: url('../images/bag1.png');}
+        div:nth-child(2) .item-img{background-image: url('../images/bag2.png');}
+        div:nth-child(3) .item-img{background-image: url('../images/bag3.png');}
+        div:nth-child(4) .item-img{background-image: url('../images/bag4.png');}
+        div:nth-child(5) .item-img{background-image: url('../images/bag5.png');}
+        div:nth-child(6) .item-img{background-image: url('../images/bag6.png');}
+    }
+    
 }
 
 // Trends Items
@@ -39,7 +50,7 @@
 
 
     .cta{
-        transform: translateY(100%);
+        transform: translateY(120%);
         @include transition(all, 200ms, linear);
         .btn{
             background: $primary-bg;
@@ -80,12 +91,12 @@
     .heart {
         transform: scale(0);
         @include transition(all, 200ms, linear);
-        i{color: crimson;}
+        i, svg {color: crimson;}
     }
     .comment{
         transform: scale(0);
         @include transition(all, 200ms, linear);
-        i{color: aqua;}
+        i, svg{color: aqua;}
     }
 }
 

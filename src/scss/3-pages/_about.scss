@@ -7,6 +7,7 @@
         height: 700px;
         width: 100%;
         @include bgImg();
+        background-image: url('../images/show.png');
     }
 
     .about-text{

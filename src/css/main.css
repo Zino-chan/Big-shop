@@ -63,6 +63,7 @@ li {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  background-image: url("../images/show.png");
 }
 
 .about .about-text h3 {
@@ -115,7 +116,7 @@ li {
   width: 35%;
 }
 
-.footer .social-nav i {
+.footer .social-nav li {
   width: 70px;
   height: 70px;
   line-height: 70px;
@@ -129,7 +130,7 @@ li {
   cursor: pointer;
 }
 
-.footer .social-nav i:hover {
+.footer .social-nav li:hover {
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
   background: -webkit-gradient(linear, left top, right top, from(#8c85f9), color-stop(52%, #996ff5), to(#a065f5));
@@ -176,7 +177,7 @@ li {
 }
 
 .home {
-  background-image: url("/src/images/fashion.jpeg");
+  background-image: url("../images/fashion.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -327,6 +328,30 @@ li {
   margin-bottom: 5rem;
 }
 
+.showcase .showcase-items div:nth-child(1) .item-img {
+  background-image: url("../images/trend1.png");
+}
+
+.showcase .showcase-items div:nth-child(2) .item-img {
+  background-image: url("../images/trend2.png");
+}
+
+.showcase .showcase-items div:nth-child(3) .item-img {
+  background-image: url("../images/trend3.png");
+}
+
+.showcase .showcase-items div:nth-child(4) .item-img {
+  background-image: url("../images/trend4.png");
+}
+
+.showcase .showcase-items div:nth-child(5) .item-img {
+  background-image: url("../images/trend5.png");
+}
+
+.showcase .showcase-items div:nth-child(6) .item-img {
+  background-image: url("../images/trend6.png");
+}
+
 .showcase .showcase-nav {
   padding: .9rem 2rem;
   width: 63%;
@@ -410,6 +435,30 @@ li {
   margin-bottom: 7rem;
 }
 
+.trends .trend-items div:nth-child(1) .item-img {
+  background-image: url("../images/bag1.png");
+}
+
+.trends .trend-items div:nth-child(2) .item-img {
+  background-image: url("../images/bag2.png");
+}
+
+.trends .trend-items div:nth-child(3) .item-img {
+  background-image: url("../images/bag3.png");
+}
+
+.trends .trend-items div:nth-child(4) .item-img {
+  background-image: url("../images/bag4.png");
+}
+
+.trends .trend-items div:nth-child(5) .item-img {
+  background-image: url("../images/bag5.png");
+}
+
+.trends .trend-items div:nth-child(6) .item-img {
+  background-image: url("../images/bag6.png");
+}
+
 .trend-item {
   margin-bottom: 5rem;
   padding: 1rem 1rem 0 1rem;
@@ -446,8 +495,8 @@ li {
 }
 
 .trend-item .cta {
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
+  -webkit-transform: translateY(120%);
+          transform: translateY(120%);
   -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
 }
@@ -501,7 +550,7 @@ li {
   transition: all 200ms linear;
 }
 
-.reactions .heart i {
+.reactions .heart i, .reactions .heart svg {
   color: crimson;
 }
 
@@ -512,7 +561,7 @@ li {
   transition: all 200ms linear;
 }
 
-.reactions .comment i {
+.reactions .comment i, .reactions .comment svg {
   color: aqua;
 }
 
