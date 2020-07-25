@@ -161,7 +161,7 @@ gsap.from(".social-nav li", {
         trigger: ".social-nav li",
         toggleActions: "play none none none",
     },
-    y: "100vh",
+    x: "-100vw",
     opacity: 0,
     duration: 1.3,
     stagger: .3
