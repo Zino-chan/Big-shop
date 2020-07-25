@@ -36,8 +36,7 @@
 
 .header{
     z-index: 9;
-    padding: 3rem 0;
-    overflow: hidden;
+    padding: 1rem 0;
     .navbar{
         width: 70vw;
         margin: 0 auto;
@@ -95,4 +94,8 @@
 
 @include responsive_max(360px){
     html{font-size: 10px!important;}
+    .navbar{
+        width: 95vw!important;
+        .navbar-btn{width: 160px!important;}
+    }
 }
