@@ -34,6 +34,39 @@
     }
 }
 
+.header{
+    z-index: 9;
+    padding: 3rem 0;
+    overflow: hidden;
+    .navbar{
+        width: 70vw;
+        margin: 0 auto;
+        padding: 0!important;
+    }
+
+    .navbar-brand{
+        font-size: 3rem;
+        color: yellow;
+    }
+    .navbar-btn{
+        width: 220px;
+        display: flex;
+        .btn{
+            width: 50%;
+            padding: 1rem 0;
+            
+        }
+        .btn:nth-of-type(1){border-radius: 40px 0 0 40px;}
+        .btn:nth-of-type(2){border-radius: 0 40px 40px 0;}
+
+        .dropdown-menu{
+            left: 50%;
+            transform: translateX(-50%);
+            &.active{display: block;}
+        }
+    }
+}
+
 
 @include responsive_mobile(){
     html{font-size: 14px;}
@@ -43,12 +76,21 @@
     }
 
     .home-text{text-align: center;}
+
+    .navbar{
+        width: 90vw!important;
+    }
 }
 
 @include responsive_max(411px){
     html{font-size: 12px;}
 
     .home-text h1{font-size: 6rem!important;}
+
+    .navbar{
+        width: 95vw!important;
+        .navbar-btn{width: 180px!important;}
+    }
 }
 
 @include responsive_max(360px){

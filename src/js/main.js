@@ -169,3 +169,8 @@ gsap.from(".social-nav li", {
 
 
 
+const selector = (s) => document.querySelector(s);
+
+selector('.dropdown-toggle').addEventListener('click', () => {
+    selector('.dropdown-menu').classList.toggle('active');
+})
