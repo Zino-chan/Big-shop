@@ -7,6 +7,7 @@ html{
 body{
     font-family: $general-font;
     overflow-x: hidden;
+    background-color: rgb(252, 247, 255)!important;
 }
 
 
@@ -20,7 +21,7 @@ h6{
 }
 
 h2{
-    font-size: 4rem;
+    font-size: 4rem!important;
     font-weight: 600;
 }
 
